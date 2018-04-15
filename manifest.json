@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Style Private Browsing",
+  "version": "1.0",
+  "description": "Extension that sets a custom for private windows. Includes a dark mode and a light mode. Based on the private browsing theme example.",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": ["theme", "storage"],
+  "applications": {
+    "gecko": {
+      "strict_min_version": "60.0",
+    }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "browser_style": true
+  }
+}
