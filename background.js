@@ -41,9 +41,5 @@ function themeWindow(window) {
     if (window.incognito) {
       browser.theme.update(window.id, settings);
     }
-    // Reset to the default theme otherwise
-    else {
-      browser.theme.reset(window.id);
-    }
   });
 }
